@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprendiendo Kanban - Metodologeando</title>
+  <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="../CSS/Kanban.css">
+</head>
+
+<body>
+  <header class="header-gradient text-white py-4 rounded-header">
+    <div class="container">
+      <div class="text-center">
+        <h1 class="display-4 fw-bold mb-3">Metodologeando</h1>
+        <a href="../index.html" class="btn btn-outline-light btn-sm rounded-pill">
+          Volver al inicio
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <!-- Hero Section -->
+    <section class="custom-gradient text-white rounded-4 p-5 mb-5 text-center shadow-custom">
+      <h2 class="display-5 fw-bold mb-4">Aprendiendo Kanban</h2>
+      <p class="lead mb-0">
+        Domina la metodología de flujo continuo que te permite visualizar el trabajo, limitar el trabajo en progreso
+        y maximizar la eficiencia. Perfecta para equipos que buscan mejora continua.
+      </p>
+    </section>
+
+    <!-- Principios de Kanban -->
+    <section class="bg-white rounded-4 p-4 mb-5 shadow-custom">
+      <h3 class="text-center mb-4 fw-bold">Los 4 Principios Fundamentales de Kanban</h3>
+      <div class="row g-4">
+        <!-- Visualizar -->
+        <div class="col-md-6">
+          <div class="card h-100 principle-card border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Visualizar el Flujo de Trabajo</h5>
+              <p class="card-text">
+                Usa un tablero con columnas que representen cada etapa del proceso. Las tarjetas muestran
+                las tareas moviéndose a través del flujo.
+              </p>
+              <div class="mt-3 p-3 bg-light rounded">
+                <strong>Beneficio:</strong> Transparencia total y identificación rápida de cuellos de botella.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Limitar WIP -->
+        <div class="col-md-6">
+          <div class="card h-100 principle-card border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Limitar el Trabajo en Progreso (WIP)</h5>
+              <p class="card-text">
+                Establece límites máximos de tareas en cada columna para evitar multitasking y mejorar el flujo.
+              </p>
+              <div class="mt-3 p-3 bg-light rounded">
+                <strong>Beneficio:</strong> Menos cambios de contexto y entregas más rápidas.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gestionar Flujo -->
+        <div class="col-md-6">
+          <div class="card h-100 principle-card border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Gestionar el Flujo</h5>
+              <p class="card-text">
+                Mide y optimiza el movimiento de las tareas a través del sistema para maximizar el valor entregado.
+              </p>
+              <div class="mt-3 p-3 bg-light rounded">
+                <strong>Beneficio:</strong> Mejora continua de la velocidad y calidad.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mejora Continua -->
+        <div class="col-md-6">
+          <div class="card h-100 principle-card border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Mejora Continua</h5>
+              <p class="card-text">
+                Usa datos del sistema para identificar oportunidades de mejora y experimentar con cambios.
+              </p>
+              <div class="mt-3 p-3 bg-light rounded">
+                <strong>Beneficio:</strong> Evolución constante hacia procesos más eficientes.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tablero Kanban Ejemplo -->
+    <section class="bg-white rounded-4 p-4 mb-5 shadow-custom">
+      <h3 class="text-center mb-4 fw-bold">Ejemplo de Tablero Kanban</h3>
+      <p class="text-center text-muted mb-4">
+        Un tablero típico organiza el trabajo en columnas que representan el flujo del proceso.
+        Cada columna representa una etapa diferente y las tarjetas se mueven de izquierda a derecha.
+      </p>
+
+      <div class="bg-light rounded-3 p-4">
+        <div class="row g-3">
+          <!-- Por Hacer -->
+          <div class="col-md-3">
+            <div class="card h-100 column-header">
+              <div class="card-body text-center">
+                <h6 class="card-title mb-3 fw-bold">Por Hacer</h6>
+                <div class="task-item p-2 mb-2 rounded">Diseñar nueva funcionalidad</div>
+                <div class="task-item p-2 mb-2 rounded">Revisar documentación</div>
+                <div class="task-item p-2 rounded">Planificar sprint</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- En Progreso -->
+          <div class="col-md-3">
+            <div class="card h-100 column-header">
+              <div class="card-body text-center">
+                <h6 class="card-title mb-3 fw-bold">En Progreso</h6>
+                <div class="task-item p-2 mb-2 rounded">Desarrollar módulo de usuario</div>
+                <div class="task-item p-2 rounded">Crear tests unitarios</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- En Revisión -->
+          <div class="col-md-3">
+            <div class="card h-100 column-header">
+              <div class="card-body text-center">
+                <h6 class="card-title mb-3 fw-bold">En Revisión</h6>
+                <div class="task-item p-2 rounded">Revisar código del login</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Terminado -->
+          <div class="col-md-3">
+            <div class="card h-100 column-header">
+              <div class="card-body text-center">
+                <h6 class="card-title mb-3 fw-bold">Terminado</h6>
+                <div class="task-item p-2 mb-2 rounded">Implementar API de productos</div>
+                <div class="task-item p-2 rounded">Configurar servidor</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prácticas Esenciales -->
+    <section class="bg-white rounded-4 p-4 mb-5 shadow-custom">
+      <h3 class="text-center mb-4 fw-bold">6 Prácticas Esenciales de Kanban</h3>
+      <div class="row g-3">
+        <div class="col-md-4 col-lg-2">
+          <div class="card h-100 practice-card text-center">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Visualizar</h5>
+              <p class="card-text small">Hacer visible todo el trabajo y su flujo</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <div class="card h-100 practice-card text-center">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Limitar WIP</h5>
+              <p class="card-text small">Controlar la cantidad de trabajo simultáneo</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <div class="card h-100 practice-card text-center">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Medir Flujo</h5>
+              <p class="card-text small">Seguir métricas como lead time y throughput</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <div class="card h-100 practice-card text-center">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Gestionar Flujo</h5>
+              <p class="card-text small">Optimizar el movimiento del trabajo</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <div class="card h-100 practice-card text-center">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Políticas Explícitas</h5>
+              <p class="card-text small">Definir reglas claras del proceso</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <div class="card h-100 practice-card text-center">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Mejora Continua</h5>
+              <p class="card-text small">Evolucionar el sistema constantemente</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Podcast -->
+    <section class="bg-white rounded-4 p-5 mb-5 text-center shadow-custom">
+      <h3 class="mb-4 fw-bold">Kanban</h3>
+      <p class="lead mb-4">
+        Aprende cómo comenzar con Kanban, establecer límites WIP efectivos y medir el éxito de tu implementación.
+      </p>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="audio-player mb-4">
+            <audio controls class="w-100">
+              <source src="../Podcasts/Kanban.mp3" type="audio/mpeg">
+              Tu navegador no soporta el elemento de audio.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Límites WIP -->
+    <section class="bg-white rounded-4 p-4 mb-5 shadow-custom">
+      <h3 class="text-center mb-4 fw-bold">Límites WIP: El Secreto de Kanban</h3>
+      <p class="text-center mb-4">
+        Los límites de Trabajo en Progreso (WIP) son fundamentales para evitar la multitarea excesiva y mejorar el
+        flujo:
+      </p>
+
+      <div class="wip-example rounded-3 p-4">
+        <h5 class="text-center mb-3">Ejemplo de Límites WIP:</h5>
+        <div class="row text-center">
+          <div class="col-md-3">
+            <div class="p-3">
+              <h6 class="fw-bold">Por Hacer</h6>
+              <p class="mb-0">Sin límite (puede crecer)</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-3">
+              <h6 class="fw-bold">En Progreso</h6>
+              <p class="mb-0">Límite de 3 tareas por persona</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-3">
+              <h6 class="fw-bold">En Revisión</h6>
+              <p class="mb-0">Límite de 2 tareas</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-3">
+              <h6 class="fw-bold">Terminado</h6>
+              <p class="mb-0">Sin límite</p>
+            </div>
+          </div>
+        </div>
+        <p class="text-center mt-3 mb-0 fst-italic">
+          <strong>Nota:</strong> Cuando una columna alcanza su límite, el equipo debe enfocarse en liberar tareas antes
+          de tomar nuevas.
+        </p>
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="bg-white rounded-4 p-4 mb-5 shadow-custom">
+      <h3 class="text-center mb-4 fw-bold">Beneficios Clave de Kanban</h3>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 benefit-card border-0">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Mayor Flexibilidad</h5>
+              <p class="card-text">
+                Puedes cambiar prioridades en cualquier momento sin afectar sprints fijos
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 benefit-card border-0">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Transparencia Total</h5>
+              <p class="card-text">
+                Todos pueden ver el estado actual de todo el trabajo
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 benefit-card border-0">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Mejor Flujo</h5>
+              <p class="card-text">
+                Entrega continua y predecible de valor
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 benefit-card border-0">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Enfoque en Valor</h5>
+              <p class="card-text">
+                Priorización basada en el valor para el cliente
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 benefit-card border-0">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Mejora Continua</h5>
+              <p class="card-text">
+                El sistema evoluciona naturalmente hacia la eficiencia
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 benefit-card border-0">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Menos Estrés</h5>
+              <p class="card-text">
+                Límites WIP previenen la sobrecarga del equipo
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recursos para Implementar Kanban -->
+    <section class="bg-white rounded-4 p-4 shadow-custom">
+      <h3 class="text-center mb-4 fw-bold">Recursos para Implementar Kanban</h3>
+      <div class="row g-4">
+        <!-- Herramientas Digitales -->
+        <div class="col-md-6">
+          <div class="card h-100 tool-card border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-4">Herramientas Digitales</h5>
+
+              <div class="d-flex align-items-start mb-3">
+                <div>
+                  <h6 class="fw-bold mb-1">Trello</h6>
+                  <p class="small mb-0 text-muted">Plataforma visual basada en tarjetas, ideal para equipos pequeños y
+                    proyectos simples.</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mb-3">
+                <div>
+                  <h6 class="fw-bold mb-1">Jira</h6>
+                  <p class="small mb-0 text-muted">Herramienta robusta para equipos de desarrollo, con funcionalidades
+                    avanzadas de Kanban.</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mb-3">
+                <div>
+                  <h6 class="fw-bold mb-1">Asana</h6>
+                  <p class="small mb-0 text-muted">Plataforma versátil para gestión de proyectos con vistas de tablero
+                    Kanban integradas.</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start">
+                <div>
+                  <h6 class="fw-bold mb-1">Monday.com</h6>
+                  <p class="small mb-0 text-muted">Sistema operativo de trabajo con tableros personalizables para flujos
+                    de trabajo visuales.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Métricas Clave -->
+        <div class="col-md-6">
+          <div class="card h-100 metric-card border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center mb-4">Métricas Clave</h5>
+
+              <div class="d-flex align-items-start mb-3">
+                <div>
+                  <h6 class="fw-bold mb-1">Lead Time</h6>
+                  <p class="small mb-0 text-muted">Tiempo total desde que se solicita una tarea hasta que se completa.
+                    Mide la eficiencia del flujo.</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mb-3">
+                <div>
+                  <h6 class="fw-bold mb-1">Cycle Time</h6>
+                  <p class="small mb-0 text-muted">Tiempo que una tarea pasa en trabajo activo. Ayuda a identificar
+                    cuellos de botella.</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mb-3">
+                <div>
+                  <h6 class="fw-bold mb-1">Throughput</h6>
+                  <p class="small mb-0 text-muted">Número de tareas completadas en un período. Indica la capacidad de
+                    entrega del equipo.</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start">
+                <div>
+                  <h6 class="fw-bold mb-1">Cumulative Flow</h6>
+                  <p class="small mb-0 text-muted">Diagrama que muestra la distribución del trabajo en diferentes etapas
+                    a lo largo del tiempo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <link rel="stylesheet" href="../JS/bootstrap.bundle.min.js">
+</body>
+
+</html>

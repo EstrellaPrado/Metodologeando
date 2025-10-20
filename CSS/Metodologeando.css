@@ -1,0 +1,47 @@
+.header-gradient {
+  background: linear-gradient(90deg, #ff6b6b, #ffa726);
+}
+
+.card-course {
+  transition: transform 0.3s ease;
+  border: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-course:hover {
+  transform: translateY(-8px);
+  color: inherit;
+}
+
+.card-full {
+  background: linear-gradient(135deg, #a29bfe, #6c5ce7);
+  color: white;
+  border: none;
+}
+
+.rounded-header {
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
+.shadow-custom {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sugerencias-box {
+  background: linear-gradient(135deg, #42a2cb, #5ac5c7);
+  color: white;
+  border: none;
+}
+
+.datos-box {
+  background: linear-gradient(135deg, #da68af, #a7338c);
+  color: white;
+  border: none;
+}
+
+.course-img {
+  height: 200px;
+  object-fit: cover;
+}

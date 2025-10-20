@@ -1,0 +1,44 @@
+.custom-gradient {
+  background: linear-gradient(135deg, #00b894 0%, #00a085 100%);
+}
+
+.header-gradient {
+  background: linear-gradient(90deg, #ff6b6b, #ffa726);
+}
+
+.role-card {
+  transition: transform 0.3s ease;
+  border-left: 4px solid #00b894;
+}
+
+.role-card:hover {
+  transform: translateY(-5px);
+}
+
+.artifact-card {
+  border-left: 4px solid #fd9644;
+}
+
+.event-card {
+  border: 2px solid #00b894;
+  background: #e8f5e8;
+}
+
+.value-card {
+  border: 2px solid #ffa726;
+  background: #fff3e0;
+}
+
+.rounded-header {
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
+.shadow-custom {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.development-team-center {
+  position: relative;
+  z-index: 1;
+}

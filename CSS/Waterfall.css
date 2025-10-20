@@ -1,0 +1,64 @@
+.custom-gradient {
+  background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+}
+
+.header-gradient {
+  background: linear-gradient(90deg, #ff6b6b, #ffa726);
+}
+
+.phase-card {
+  transition: transform 0.3s ease;
+  border-left: 6px solid #9b59b6;
+}
+
+.phase-card:hover {
+  transform: translateX(5px);
+}
+
+.characteristic-card {
+  border-left: 4px solid #8e44ad;
+}
+
+.case-card {
+  border: 2px solid #3498db;
+  background: #e8f4f8;
+}
+
+.pros-card {
+  border-left: 4px solid #27ae60;
+  background: #e8f5e8;
+}
+
+.cons-card {
+  border-left: 4px solid #e74c3c;
+  background: #ffeaea;
+}
+
+.process-card {
+  border-left: 4px solid #2196f3;
+  background: #e3f2fd;
+}
+
+.rounded-header {
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
+.shadow-custom {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.phase-number {
+  width: 35px;
+  height: 35px;
+  background: #9b59b6;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}

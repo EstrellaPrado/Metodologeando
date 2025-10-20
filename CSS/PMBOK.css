@@ -1,0 +1,33 @@
+.custom-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.header-gradient {
+  background: linear-gradient(90deg, #ff6b6b, #ffa726);
+}
+
+.area-card {
+  transition: transform 0.3s ease;
+  border-left: 4px solid #667eea;
+}
+
+.area-card:hover {
+  transform: translateY(-5px);
+}
+
+.process-card {
+  border-left: 4px solid #2196f3;
+}
+
+.resource-card {
+  border-left: 4px solid #ffa726;
+}
+
+.rounded-header {
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
+.shadow-custom {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
