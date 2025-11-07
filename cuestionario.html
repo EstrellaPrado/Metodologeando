@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cuestionario - Metodologías de Proyectos</title>
+  <link rel="stylesheet" href="cuestionario.css">
+
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">M</div>
+      <div>
+        <h1>Cuestionario — Metodologías de Proyectos</h1>
+        <p class="lead">15 preguntas — Selecciona una respuesta por pregunta y pulsa "Enviar" para ver resultados y explicaciones.</p>
+      </div>
+    </header>
+
+    <div class="timer" id="timer" style="display:none">
+      Tiempo restante: <span id="time">08:00</span>
+    </div>
+
+    <div class="start-screen" id="startScreen">
+      <h2>Cuestionario de Metodologías</h2>
+      <p>Tendrás 8 minutos para responder 7 preguntas aleatorias.</p>
+      <button class="btn" id="startBtn">Comenzar</button>
+    </div>
+
+    <div class="card">
+      <form id="quizForm">
+
+        <!-- Preguntas -->
+
+        <div class="question" data-q="1">
+          <div class="q-title"><div class="q-number">1. ¿Qué rol en Scrum se encarga de priorizar el Product Backlog?</div><div class="q-meta">Scrum</div></div>
+          <div class="options">
+            <label class="opt"><input type="radio" name="q1" value="a"> a) Scrum Master</label>
+            <label class="opt"><input type="radio" name="q1" value="b"> b) Product Owner</label>
+            <label class="opt"><input type="radio" name="q1" value="c"> c) Development Team</label>
+            <label class="opt"><input type="radio" name="q1" value="d"> d) Stakeholder</label>
+          </div>
+        </div>
+
+        <div class="question" data-q="2">
+          <div class="q-title"><div class="q-number">2. ¿Cuánto tiempo máximo dura un Sprint en Scrum?</div><div class="q-meta">Scrum</div></div>
+          <div class="options">
+            <label class="opt"><input type="radio" name="q2" value="a"> a) 1 semana</label>
+            <label class="opt"><input type="radio" name="q2" value="b"> b) 2 semanas</label>
+            <label class="opt"><input type="radio" name="q2" value="c"> c) 4 semanas</label>
+            <label class="opt"><input type="radio" name="q2" value="d"> d) 6 semanas</label>
+          </div>
+        </div>
+
+        <div class="question" data-q="3">
+          <div class="q-title"><div class="q-number">3. ¿Cuál es el objetivo principal de la reunión Daily Scrum?</div><div class="q-meta">Scrum</div></div>
+          <div class="options">
+            <label class="opt"><input type="radio" name="q3" value="a"> a) Revisar el avance del sprint</label>
+            <label class="opt"><input type="radio" name="q3" value="b"> b) Presentar el producto final</label>
+            <label class="opt"><input type="radio" name="q3" value="c"> c) Planificar nuevas historias</label>
+            <label class="opt"><input type="radio" name="q3" value="d"> d) Discutir los errores del proyecto</label>
+          </div>
+        </div>
+
+        <div class="question" data-q="4">
+          <div class="q-title"><div class="q-number">4. ¿Qué representa cada columna en un tablero Kanban?</div><div class="q-meta">Kanban</div></div>
+          <div class="options">
+            <label class="opt"><input type="radio" name="q4" value="a"> a) Un miembro del equipo</label>
+            <label class="opt"><input type="radio" name="q4" value="b"> b) Un tipo de recurso</label>
+            <label class="opt"><input type="radio" name="q4" value="c"> c) Un estado del trabajo</label>
+            <label class="opt"><input type="radio" name="q4" value="d"> d) Una prioridad</label>
+          </div>
+        </div>
+
+        <div class="question" data-q="5">
+          <div class="q-title"><div class="q-number">5. ¿Cuál es el propósito del WIP (Work In Progress)?</div><div class="q-meta">Kanban</div></div>
+          <div class="options">
+            <label class="opt"><input type="radio" name="q5" value="a"> a) Limitar la cantidad de tareas activas</label>
+            <label class="opt"><input type="radio" name="q5" value="b"> b) Aumentar la productividad sin límite</label>
+            <label class="opt"><input type="radio" name="q5" value="c"> c) Calcular la velocidad del sprint</label>
+            <label class="opt"><input type="radio" name="q5" value="d"> d) Organizar reuniones</label>
+          </div>
+        </div>
+
+        <div class="question" data-q="6">
+          <div class="q-title"><div class="q-number">6. ¿Cuál de las siguientes prácticas pertenece a XP?</div><div class="q-meta">Extreme Programming</div></div>
+          <div class="options">
+            <label class="opt"><input type="radio" name="q6" value="a"> a) Testing automático y continuo</label>
+            <label class="opt"><input type="radio" name="q6" value="b"> b) Documentación extensa</label>
+            <label class="opt"><input type="radio" name="q6" value="c"> c) Jerarquías rígidas</label>
+            <label class="opt"><input type="radio" name="q6" value="d"> d) Desarrollo en cascada</label>
+          </div>
+        </div>
+
+        <div class="question" data-q="7">
+          <div class="q-title"><div class="q-number">7. En XP, ¿qué significa la práctica de Pair Programming?</div><div class="q-meta">Extreme Programming</div></div>
+          <div class="options">
+            <label class="opt"><input type="radio" name="q7" value="a"> a) Dos desarrolladores trabajan juntos en el mismo código</label>
+            <label class="opt"><input type="radio" name="q7" value="b"> b) Dos proyectos se ejecutan al mismo tiempo</label>
+            <label class="opt"><input type="radio" name="q7" value="c"> c) Un desarrollador revisa el código del otro al final</label>
+            <label class="opt"><input type="radio" name="q7" value="d"> d) Dos equipos compiten por la mejor solución</label>
+          </div>
+        </div>
+
+        <div class="question" data-q="8">
+          <div class="q-title"><div class="q-number">8. ¿Cuál es la característica principal del modelo en cascada (Waterfall)?</div><div class="q-meta">Waterfall</div></div>
+          <div class="options">
+            <label class="opt"><input type="radio" name="q8" value="a"> a) Fases simultáneas</label>
+            <label class="opt"><input type="radio" name="q8" value="b"> b) Revisión continua del código</label>
+            <label class="opt"><input type="radio" name="q8" value="c"> c) Secuencia lineal de etapas</label>
+            <label class="opt"><input type="radio" name="q8" value="d"> d) Iteraciones constantes</label>
+          </div>
+        </div>
+
+        <div class="question" data-q="9">
+          <div class="q-title"><div class="q-number">9. ¿En qué etapa del modelo cascada se realiza la codificación?</div><div class="q-meta">Waterfall</div></div>
+          <div class="options">
+            <label class="opt"><input type="radio" name="q9" value="a"> a) Análisis</label>
+            <label class="opt"><input type="radio" name="q9" value="b"> b) Diseño</label>
+            <label class="opt"><input type="radio" name="q9" value="c"> c) Implementación</label>
+            <label class="opt"><input type="radio" name="q9" value="d"> d) Mantenimiento</label>
+          </div>
+        </div>
+
+        <div class="question" data-q="10">
+          <div class="q-title"><div class="q-number">10. ¿Qué busca eliminar la metodología Lean?</div><div class="q-meta">Lean</div></div>
+          <div class="options">
+            <label class="opt"><input type="radio" name="q10" value="a"> a) Costos de personal</label>
+            <label class="opt"><input type="radio" name="q10" value="b"> b) Desperdicio o actividades sin valor</label>
+            <label class="opt"><input type="radio" name="q10" value="c"> c) Tiempo de descanso</label>
+            <label class="opt"><input type="radio" name="q10" value="d"> d) Procesos automatizados</label>
+          </div>
+        </div>
+
+        <div class="question" data-q="11">
+          <div class="q-title"><div class="q-number">11. ¿Qué concepto de Lean se relaciona con la mejora continua?</div><div class="q-meta">Lean</div></div>
+          <div class="options">
+            <label class="opt"><input type="radio" name="q11" value="a"> a) Kaizen</label>
+            <label class="opt"><input type="radio" name="q11" value="b"> b) Just-in-time</label>
+            <label class="opt"><input type="radio" name="q11" value="c"> c) Poka-yoke</label>
+            <label class="opt"><input type="radio" name="q11" value="d"> d) Muda</label>
+          </div>
+        </div>
+
+        <div class="question" data-q="12">
+          <div class="q-title"><div class="q-number">12. ¿Cuál de los siguientes principios pertenece al manifiesto ágil?</div><div class="q-meta">Agile</div></div>
+          <div class="options">
+            <label class="opt"><input type="radio" name="q12" value="a"> a) Contratos más importantes que la colaboración</label>
+            <label class="opt"><input type="radio" name="q12" value="b"> b) Adaptarse al cambio sobre seguir un plan</label>
+            <label class="opt"><input type="radio" name="q12" value="c"> c) Documentación sobre software funcional</label>
+            <label class="opt"><input type="radio" name="q12" value="d"> d) Procesos rígidos sobre flexibilidad</label>
+          </div>
+        </div>
+
+        <div class="question" data-q="13">
+          <div class="q-title"><div class="q-number">13. ¿Qué se busca principalmente con las metodologías ágiles?</div><div class="q-meta">Agile</div></div>
+          <div class="options">
+            <label class="opt"><input type="radio" name="q13" value="a"> a) Documentar más</label>
+            <label class="opt"><input type="radio" name="q13" value="b"> b) Reducir la interacción entre equipos</label>
+            <label class="opt"><input type="radio" name="q13" value="c"> c) Entregar valor al cliente rápidamente</label>
+            <label class="opt"><input type="radio" name="q13" value="d"> d) Centralizar las decisiones</label>
+          </div>
+        </div>
+
+        <div class="question" data-q="14">
+          <div class="q-title"><div class="q-number">14. ¿Cuál es una ventaja común entre Scrum y Kanban?</div><div class="q-meta">Scrum / Kanban</div></div>
+          <div class="options">
+            <label class="opt"><input type="radio" name="q14" value="a"> a) El trabajo se organiza visualmente</label>
+            <label class="opt"><input type="radio" name="q14" value="b"> b) Ambos requieren un Product Owner</label>
+            <label class="opt"><input type="radio" name="q14" value="c"> c) No permiten cambios durante el proceso</label>
+            <label class="opt"><input type="radio" name="q14" value="d"> d) Usan fases lineales</label>
+          </div>
+        </div>
+
+        <div class="question" data-q="15">
+          <div class="q-title"><div class="q-number">15. ¿Qué metodología elegirías para un proyecto con requisitos cambiantes y frecuentes entregas?</div><div class="q-meta">General</div></div>
+          <div class="options">
+            <label class="opt"><input type="radio" name="q15" value="a"> a) Waterfall</label>
+            <label class="opt"><input type="radio" name="q15" value="b"> b) Agile</label>
+            <label class="opt"><input type="radio" name="q15" value="c"> c) V-Model</label>
+            <label class="opt"><input type="radio" name="q15" value="d"> d) RUP</label>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="button" class="btn" id="submitBtn">Enviar</button>
+          <button type="button" class="btn secondary" id="resetBtn">Reiniciar</button>
+        </div>
+
+      </form>
+
+      <div id="result" class="results" style="display:none">
+        <div class="score">Puntaje: <span id="scoreVal">0</span> / 15</div>
+        <div id="breakdown"></div>
+        <div class="explanation">Se mostrará una breve explicación por pregunta con la respuesta correcta.</div>
+      </div>
+
+      <footer class="note">Diseñado para el Sprint 2 — Cuestionario de metodologías. Puedes integrar las respuestas y explicaciones en tu herramienta.</footer>
+    </div>
+  </div>
+
+  <script>
+const answers = {
+  q1: 'b', q2: 'c', q3: 'a', q4: 'c', q5: 'a', q6: 'a', q7: 'a', 
+  q8: 'c', q9: 'c', q10: 'b', q11: 'a', q12: 'b', q13: 'c', q14: 'a', q15: 'b'
+};
+
+const explanations = {
+  q1: 'El Product Owner es responsable del Product Backlog y de priorizar ítems según el valor para el cliente.',
+  q2: 'Un Sprint en Scrum no debe durar más de un mes (4 semanas); lo más común son 2 semanas.',
+  q3: 'La Daily Scrum sincroniza al equipo y revisa el progreso hacia el objetivo del sprint en 15 minutos.',
+  q4: 'Cada columna de Kanban refleja un estado del trabajo (p.ej. Por hacer → En progreso → Hecho).',
+  q5: 'WIP limita la cantidad de tareas activas para mejorar el flujo y evitar sobrecarga.',
+  q6: 'XP fomenta pruebas automáticas y continuas para mantener alta calidad del código.',
+  q7: 'Pair Programming implica que dos desarrolladores trabajan juntos en el mismo código intercambiando roles.',
+  q8: 'Waterfall es un modelo de desarrollo con fases secuenciales que se completan una tras otra.',
+  q9: 'La codificación se realiza en la etapa de implementación, después del diseño.',
+  q10: 'Lean busca eliminar desperdicios (actividades que no añaden valor) para optimizar procesos.',
+  q11: 'Kaizen es el concepto de mejora continua en Lean.',
+  q12: 'El manifiesto ágil valora adaptarse al cambio sobre seguir estrictamente un plan.',
+  q13: 'Las metodologías ágiles buscan entregar valor al cliente de manera temprana y constante.',
+  q14: 'Tanto Scrum como Kanban usan tableros visuales para organizar y mostrar el estado del trabajo.',
+  q15: 'Metodologías ágiles son las más adecuadas para proyectos con requisitos cambiantes y entregas frecuentes.'
+};
+
+const startBtn = document.getElementById('startBtn');
+const startScreen = document.getElementById('startScreen');
+const quizForm = document.getElementById('quizForm');
+const timer = document.getElementById('timer');
+const timeDisplay = document.getElementById('time');
+const submitBtn = document.getElementById('submitBtn');
+const resetBtn = document.getElementById('resetBtn');
+const resultBox = document.getElementById('result');
+const scoreVal = document.getElementById('scoreVal');
+const breakdown = document.getElementById('breakdown');
+
+let timeLeft;
+let timerInterval;
+
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+function startQuiz() {
+  // Ocultar pantalla inicial
+  startScreen.style.display = 'none';
+  
+  // Mostrar temporizador
+  timer.style.display = 'block';
+  
+  // Seleccionar 7 preguntas aleatorias
+  const questions = document.querySelectorAll('.question');
+  const questionsArray = Array.from(questions);
+  const randomQuestions = shuffleArray(questionsArray).slice(0, 7);
+  
+  // Ocultar todas las preguntas y mostrar solo las seleccionadas
+  questions.forEach(q => q.style.display = 'none');
+  randomQuestions.forEach(q => q.style.display = 'block');
+  
+  // Mostrar formulario
+  quizForm.style.display = 'block';
+  
+  // Iniciar temporizador
+  timeLeft = 8 * 60; // 8 minutos en segundos
+  startTimer();
+}
+
+function startTimer() {
+  timerInterval = setInterval(() => {
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+    timeDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      submitQuiz();
+    }
+    timeLeft--;
+  }, 1000);
+}
+
+function submitQuiz() {
+  clearInterval(timerInterval);
+  timer.style.display = 'none';
+  
+  let score = 0;
+  const visibleQuestions = Array.from(document.querySelectorAll('.question[style="display: block;"]'));
+  breakdown.innerHTML = '';
+
+  visibleQuestions.forEach(question => {
+    const qNum = question.dataset.q;
+    const name = 'q' + qNum;
+    const selected = document.querySelector(`input[name="${name}"]:checked`);
+    const userAns = selected ? selected.value : null;
+    const correct = answers[name];
+
+    const itemDiv = document.createElement('div');
+    itemDiv.style.marginTop = '10px';
+
+    if(userAns === correct) {
+      score++;
+      itemDiv.innerHTML = `<div><strong>Pregunta ${qNum} — Correcto</strong> <span style="color:var(--correct)">(${userAns})</span></div><div class="explanation">${explanations[name]}</div>`;
+    } else {
+      itemDiv.innerHTML = `<div><strong>Pregunta ${qNum} — Incorrecto</strong> <span style="color:var(--wrong)">${userAns ? '('+userAns+')' : '(sin respuesta)'} — Respuesta correcta: (${correct})</span></div><div class="explanation">${explanations[name]}</div>`;
+    }
+    breakdown.appendChild(itemDiv);
+  });
+
+  scoreVal.textContent = score;
+  resultBox.style.display = 'block';
+  resultBox.scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+function resetQuiz() {
+  clearInterval(timerInterval);
+  timer.style.display = 'none';
+  quizForm.reset();
+  resultBox.style.display = 'none';
+  startScreen.style.display = 'block';
+  document.querySelectorAll('.question').forEach(q => q.style.display = 'none');
+}
+
+startBtn.addEventListener('click', startQuiz);
+submitBtn.addEventListener('click', submitQuiz);
+resetBtn.addEventListener('click', resetQuiz);
+
+// Ocultar formulario inicialmente
+quizForm.style.display = 'none';
+  </script>
+</body>
+</html>
